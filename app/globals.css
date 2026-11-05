@@ -547,11 +547,9 @@ body {
   color: #dfeaf8;
 }
 
-.skill-logo {
-  width: 24px;
-  height: 24px;
-  vertical-align: middle;
-  flex-shrink: 0;
+.skill-bullet {
+  color: #7dd3fc;
+  font-size: 0.9rem;
 }
 
 /* ================================
