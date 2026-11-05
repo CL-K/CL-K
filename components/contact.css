@@ -1,52 +1,57 @@
 .contact-section {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 2rem;
-  background: #f9fafb;
-  border-radius: 12px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 3rem auto 6rem;
+  padding: 3rem 2rem;
+  background: rgba(15, 23, 42, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, 0.28);
   text-align: center;
-  margin-bottom: 17rem;
 }
 
 .contact-title {
-  font-size: 2rem;
-  margin-bottom: 0.5rem;
-  color: #111827;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.8rem;
+  color: #f8fafc;
+  font-weight: 800;
 }
 
 .contact-subtitle {
-  font-size: 1rem;
-  color: #6b7280;
+  font-size: 1.05rem;
+  color: #dfeaf8;
   margin-bottom: 2rem;
+  line-height: 1.8;
 }
 
 .contact-options {
   margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 1.2rem;
   justify-content: center;
 }
 
 .contact-link {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
-  background: #111827;
-  color: #f9fafb;
-  padding: 0.7rem 1.2rem;
-  border-radius: 8px;
+  gap: 0.7rem;
+  background: rgba(30, 41, 59, 0.9);
+  color: #f8fafc;
+  padding: 0.9rem 1.3rem;
+  border-radius: 999px;
   text-decoration: none;
-  transition: background 0.3s, transform 0.2s;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
 }
 
 .contact-link:hover {
-  background: #2563eb;
-  transform: scale(1.05);
+  background: rgba(37, 99, 235, 0.2);
+  border-color: rgba(125, 211, 252, 0.45);
+  transform: translateY(-2px);
 }
 
 .contact-icon {
   width: 24px;
   height: 24px;
 }
+

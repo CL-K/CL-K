@@ -1,39 +1,40 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Cryptodash – Complete DevOps Project",
+      title: "HA-Infra EKS — Multi-AZ Amazon EKS Cluster on AWS",
       description:
-        "End-to-end DevOps pipeline: Infrastructure as Code (Terraform/Kubernetes), containerized application, and automated GitOps deployment with ArgoCD.",
-      github: "https://github.com/CL-KRMA/cryptodash-infra",
+        "Provisioned a production-grade Amazon EKS cluster with Terraform across 3 availability zones. Includes VPC segmentation, private node groups, secure remote state on S3 + KMS, EBS CSI integration, Traefik ingress, cert-manager, ArgoCD, Prometheus, and Grafana. CI pipeline validates Terraform, TFLint, Checkov, Ansible, and ShellCheck on every push.",
+      github: "https://github.com/CL-KRMA/HA-infra-eks",
       demo: null,
       extraLinks: [
-        { label: "Infra Repo", url: "https://github.com/CL-KRMA/cryptodash-infra" },
-        { label: "App Repo", url: "https://github.com/CL-KRMA/cryptodash-app" },
-        { label: "GitOps Repo", url: "https://github.com/CL-KRMA/cryptodash-gitops" },
+        { label: "GitHub Repo", url: "https://github.com/CL-KRMA/HA-infra-eks" },
       ],
     },
     {
-      title: "AI‑Chat‑app – Multi-model AI Application",
+      title: "AI Chat — AI Chat Platform on Kubernetes",
       description:
-        "Next.js application integrating multiple AI models (Gemma, LLaMA, LLaVA) with REST API and user interface.",
+        "Built a Kubernetes-based AI platform running multiple open models (Llama3, Llava, Gemma) behind a Traefik ingress. The stack includes GitOps deployment with ArgoCD, persistent storage, monitoring, and a CI/CD flow that runs ESLint, unit tests, security scanning, Docker build, and automatic GitOps updates.",
       github: "https://github.com/CL-KRMA/AI-Chat-app",
       demo: null,
       extraLinks: [
-        { label: "Infra Repo", url: "https://github.com/CL-KRMA/AI-Chat-infra" },
         { label: "App Repo", url: "https://github.com/CL-KRMA/AI-Chat-app" },
         { label: "GitOps Repo", url: "https://github.com/CL-KRMA/AI-Chat-gitops" },
       ],
     },
     {
-      title: "React/Node.js, Next.js Application",
-      description: "REST API + modern user interface.",
-      github: "https://github.com/CL-KRMA/Galerie-en-ligne-fullstack",
-      demo: "https://galerie-en-ligne-fullstack.vercel.app/",
+      title: "n8n — Low-code Automation with Observability",
+      description:
+        "Deployed n8n with Docker Compose behind Traefik using automated TLS via Let's Encrypt. The setup includes strict network segmentation, read-only Docker socket proxy, monitoring with Prometheus and Grafana, and analytics integration with Umami and PostgreSQL.",
+      github: "https://github.com/CL-KRMA/n8n-infra",
+      demo: null,
+      extraLinks: [
+        { label: "Infra Repo", url: "https://github.com/CL-KRMA/n8n-infra" },
+      ],
     },
     {
-      title: "Taskflow – Simplified Task Management with Next.js",
+      title: "Taskflow — Task Management Web App",
       description:
-        "Taskflow: robust REST API with a modern and intuitive user interface.",
+        "A full-stack task management application built with Next.js and a REST API, focused on a modern user experience and clean workflow management.",
       github: "https://github.com/CL-KRMA/Taskflow",
       demo: "https://taskflow-omega-teal.vercel.app/",
     },
@@ -41,7 +42,7 @@ export default function Projects() {
 
   return (
     <div className="projects">
-      <h2 className="projects-title">🚀 My projects</h2>
+      <h2 className="projects-title">🚀 Personal projects</h2>
       <div className="project-list">
         {projects.map((project, index) => (
           <div key={index} className="project-card">

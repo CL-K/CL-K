@@ -12,51 +12,57 @@ import nginxLogo from "../app/assets/logos/nginx.png";
 export default function Skills() {
   const skills = [
     {
-      category: "Frontend/Backend",
+      category: "Cloud & Platforms",
       items: [
-        { name: "React.js", logo: reactLogo },
-        { name: "Node.js (Express)", logo: nodeLogo },
-        { name: "Next.js", logo: nextLogo },
-        { name: "REST API" },
+        { name: "AWS (VPC, EC2, EKS, IAM, S3, KMS)" },
+        { name: "GCP (familiarity)" },
+        { name: "Azure (familiarity)" },
       ],
     },
     {
-      category: "Databases",
+      category: "Kubernetes & Containers",
       items: [
-        { name: "MySQL", logo: mysqlLogo },
-        { name: "PostgreSQL", logo: postgresLogo },
-        { name: "MongoDB", logo: mongoLogo },
+        { name: "Kubernetes" },
+        { name: "Amazon EKS" },
+        { name: "Docker" },
+        { name: "Docker Compose" },
       ],
     },
     {
-      category: "CMS",
-      items: [{ name: "WordPress development and optimization", logo: wordpressLogo }],
-    },
-    {
-      category: "DevOps Skills",
+      category: "Infrastructure as Code",
       items: [
-        { name: "Versioning: Git, GitHub, GitLab" },
-        { name: "Systems & Administration: Linux, Bash, SSH" },
-        { name: "Containers & Orchestration: Docker, Kubernetes" },
-        { name: "CI/CD: Jenkins, GitLab CI, GitHub Actions" },
-        { name: "GitOps: ArgoCD" },
-        { name: "Cloud Providers: AWS, Azure, GCP" },
-        { name: "Infrastructure as Code (IaC): Terraform, Ansible" },
-        { name: "Monitoring & Observability: Prometheus, Grafana" },
+        { name: "Terraform" },
+        { name: "Ansible" },
+        { name: "Remote state on S3 + KMS" },
       ],
     },
     {
-      category: "Web Servers",
+      category: "CI/CD & GitOps",
       items: [
-        { name: "Apache", logo: apacheLogo },
-        { name: "Nginx", logo: nginxLogo },
-        { name: "Reverse Proxy" },
-        { name: "VirtualHosts" },
+        { name: "GitHub Actions" },
+        { name: "ArgoCD" },
+        { name: "Traefik", logo: nginxLogo },
+        { name: "cert-manager / Let's Encrypt" },
       ],
     },
     {
-      category: "Security",
-      items: [{ name: "SSL/TLS (Certbot/Let's Encrypt)" }],
+      category: "Monitoring & Security",
+      items: [
+        { name: "Prometheus" },
+        { name: "Grafana" },
+        { name: "Trivy" },
+        { name: "Checkov" },
+        { name: "Ansible Vault" },
+      ],
+    },
+    {
+      category: "Scripting & DevOps",
+      items: [
+        { name: "Bash" },
+        { name: "Python automation" },
+        { name: "Linux & SSH" },
+        { name: "Reverse proxy & ingress" },
+      ],
     },
   ];
 
