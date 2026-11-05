@@ -11,59 +11,73 @@ import nginxLogo from "../app/assets/logos/nginx.png";
 
 export default function Skills() {
   const skills = [
-    { category: "Frontend/Backend", items: [
-      { name: "React.js", logo: reactLogo },
-      { name: "Node.js (Express)", logo: nodeLogo },
-      { name: "Next.js", logo: nextLogo },
-      { name: "API REST" }
-    ]},
-    { category: "Bases de données", items: [
-      { name: "MySQL", logo: mysqlLogo },
-      { name: "PostgreSQL", logo: postgresLogo },
-      { name: "MongoDB", logo: mongoLogo }
-    ]},
-    { category: "CMS", items: [
-      { name: "Développement et optimisation WordPress", logo: wordpressLogo }
-    ]},
-    { category: "Compétences DevOps", items: [
-    { name: "Versioning : Git, GitHub, GitLab" },
-    { name: "Systèmes & Administration : Linux, Bash, SSH" },
-    { name: "Conteneurs & Orchestration : Docker, Kubernetes" },
-    { name: "CI/CD : Jenkins, GitLab CI, GitHub Actions" },
-    { name: "GitOps : ArgoCD" },
-    { name: "Cloud Providers : AWS, Azure, GCP" },
-    { name: "Infrastructure as Code (IaC) : Terraform, Ansible" },
-    { name: "Monitoring & Observabilité : Prometheus, Grafana" }
-    ]},
-    { category: "Serveurs Web", items: [
-      { name: "Apache", logo: apacheLogo },
-      { name: "Nginx", logo: nginxLogo },
-      { name: "Reverse Proxy" },
-      { name: "VirtualHosts" }
-    ]},
-    { category: "Sécurité", items: [
-      { name: "SSL/TLS (Certbot/Let's Encrypt)" }
-    ]},
+    {
+      category: "Frontend/Backend",
+      items: [
+        { name: "React.js", logo: reactLogo },
+        { name: "Node.js (Express)", logo: nodeLogo },
+        { name: "Next.js", logo: nextLogo },
+        { name: "REST API" },
+      ],
+    },
+    {
+      category: "Databases",
+      items: [
+        { name: "MySQL", logo: mysqlLogo },
+        { name: "PostgreSQL", logo: postgresLogo },
+        { name: "MongoDB", logo: mongoLogo },
+      ],
+    },
+    {
+      category: "CMS",
+      items: [{ name: "WordPress development and optimization", logo: wordpressLogo }],
+    },
+    {
+      category: "DevOps Skills",
+      items: [
+        { name: "Versioning: Git, GitHub, GitLab" },
+        { name: "Systems & Administration: Linux, Bash, SSH" },
+        { name: "Containers & Orchestration: Docker, Kubernetes" },
+        { name: "CI/CD: Jenkins, GitLab CI, GitHub Actions" },
+        { name: "GitOps: ArgoCD" },
+        { name: "Cloud Providers: AWS, Azure, GCP" },
+        { name: "Infrastructure as Code (IaC): Terraform, Ansible" },
+        { name: "Monitoring & Observability: Prometheus, Grafana" },
+      ],
+    },
+    {
+      category: "Web Servers",
+      items: [
+        { name: "Apache", logo: apacheLogo },
+        { name: "Nginx", logo: nginxLogo },
+        { name: "Reverse Proxy" },
+        { name: "VirtualHosts" },
+      ],
+    },
+    {
+      category: "Security",
+      items: [{ name: "SSL/TLS (Certbot/Let's Encrypt)" }],
+    },
   ];
 
   return (
     <div className="skills-section">
-      <h2 className="skills-title">💡 Mon expertise technique</h2>
+      <h2 className="skills-title">💡 My technical expertise</h2>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-card">
             <h3>{skill.category}</h3>
             <ul>
               {skill.items.map((item, i) => (
-              <li key={i}>
-                {item.logo ? (
-                  <Image src={item.logo} alt={item.name} className="skill-logo" />
-                ) : (
-                  "🔹"
-                )}
-                <strong>{item.name}</strong>
-              </li>
-            ))}
+                <li key={i}>
+                  {item.logo ? (
+                    <Image src={item.logo} alt={item.name} className="skill-logo" />
+                  ) : (
+                    "🔹"
+                  )}
+                  <strong>{item.name}</strong>
+                </li>
+              ))}
             </ul>
           </div>
         ))}

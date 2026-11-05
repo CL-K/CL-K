@@ -1,52 +1,53 @@
 export default function About() {
   return (
     <div className="about-section">
-      <h2 className="about-title">👋 À propos de moi</h2>
+      <h2 className="about-title">👋 About me</h2>
       <p className="about-text">
-        Je suis <strong>Ingénieur DevOps</strong> spécialisé dans l’automatisation, 
-        le déploiement et la supervision d’infrastructures modernes. 
-        J’accompagne les entreprises dans la mise en place de solutions fiables, 
-        évolutives et sécurisées, en intégrant les meilleures pratiques DevOps et Cloud.
+        I am a <strong>DevOps Engineer</strong> specialized in automation,
+        deployment, and monitoring of modern infrastructures. I help businesses
+        implement reliable, scalable, and secure solutions by integrating the
+        best DevOps and Cloud practices.
       </p>
 
       <p className="about-text">
-        <strong>Mon expertise couvre :</strong>
+        <strong>My expertise covers:</strong>
       </p>
 
       <p className="about-text">
-        <strong>CI/CD & Automatisation</strong> : pipelines Jenkins, GitLab CI, GitHub Actions 
-        pour accélérer et fiabiliser les livraisons.
+        <strong>CI/CD & Automation</strong>: Jenkins, GitLab CI, and GitHub
+        Actions pipelines to accelerate and improve delivery reliability.
       </p>
 
       <p className="about-text">
-        <strong>Conteneurisation & Orchestration</strong> : Docker et Kubernetes pour des 
-        environnements modulaires et scalables.
+        <strong>Containerization & Orchestration</strong>: Docker and Kubernetes
+        for modular and scalable environments.
       </p>
 
       <p className="about-text">
-        <strong>Cloud & Multi-cloud</strong> : gestion d’infrastructures sur AWS, Azure et GCP, 
-        avec optimisation des coûts et de la performance.
+        <strong>Cloud & Multi-cloud</strong>: managing infrastructures on AWS,
+        Azure, and GCP, while optimizing cost and performance.
       </p>
 
       <p className="about-text">
-        <strong>Infrastructure as Code</strong> : automatisation des déploiements avec 
-        Terraform et Ansible.
+        <strong>Infrastructure as Code</strong>: automating deployments with
+        Terraform and Ansible.
       </p>
 
       <p className="about-text">
-        <strong>Administration systèmes</strong> : serveurs Linux, configuration avancée 
-        d’Apache et Nginx (Reverse Proxy, VirtualHosts).
+        <strong>System Administration</strong>: Linux servers, advanced Apache
+        and Nginx configuration (Reverse Proxy, VirtualHosts).
       </p>
 
       <p className="about-text">
-        <strong>Sécurité & Monitoring</strong> : certificats SSL/TLS automatisés 
-        (Certbot/Let’s Encrypt), supervision proactive avec Prometheus et Grafana.
+        <strong>Security & Monitoring</strong>: automated SSL/TLS certificates
+        (Certbot/Let&apos;s Encrypt), proactive monitoring with Prometheus and
+        Grafana.
       </p>
 
       <p className="about-text">
-        🎯 Mon objectif est de garantir des environnements robustes et performants, 
-        en transformant vos idées en solutions digitales parfaitement intégrées grâce 
-        à une approche DevOps centrée sur l’automatisation, la sécurité et la scalabilité.
+        🎯 My goal is to ensure robust and high-performing environments by
+        transforming your ideas into fully integrated digital solutions through
+        a DevOps approach focused on automation, security, and scalability.
       </p>
     </div>
   );

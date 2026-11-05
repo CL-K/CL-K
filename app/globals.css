@@ -6,7 +6,7 @@
 .navbar {
   margin-bottom: 2rem;
   display: flex;
-  justify-content: space-between; /* sépare centre et droite */
+  justify-content: space-between; /* separates center and right */
   align-items: center;
   background: linear-gradient(90deg, #4a90e2, #007aff);
   padding: 1rem 2rem;
@@ -17,7 +17,7 @@
   display: flex;
   gap: 2rem;
   justify-content: center;
-  flex: 1; /* occupe l’espace disponible pour rester centré */
+  flex: 1; /* fills available space to stay centered */
 }
 
 .nav-right {
@@ -51,25 +51,25 @@
   width: 100%;
 }
 
-/* Style pour le menu central */
+/* Center menu styles */
 .nav-center a {
-  color: #ffffff;              /* texte blanc */
-  text-decoration: none;       /* pas de soulignement */
+  color: #ffffff;              /* white text */
+  text-decoration: none;       /* no underline */
   font-weight: 500;
   font-size: 1.1rem;
-  padding: 0.5rem 1rem;        /* espace autour du texte */
-  border-radius: 4px;          /* coins légèrement arrondis */
-  transition: all 0.3s ease;   /* animation fluide */
+  padding: 0.5rem 1rem;        /* space around the text */
+  border-radius: 4px;          /* slightly rounded corners */
+  transition: all 0.3s ease;   /* smooth animation */
   position: relative;
 }
 
-/* Effet au survol */
+/* Hover effect */
 .nav-center a:hover {
-  background-color: rgba(255, 221, 87, 0.2); /* fond jaune transparent */
-  color: #ffdd57;                            /* texte jaune */
+  background-color: rgba(255, 221, 87, 0.2); /* transparent yellow background */
+  color: #ffdd57;                            /* yellow text */
 }
 
-/* Soulignement animé */
+/* Animated underline */
 .nav-center a::after {
   content: '';
   display: block;
@@ -111,7 +111,7 @@
   color: #ffdd57;
 }
 
-/* Icônes sociales */
+/* Social icons */
 .footer .socials {
   margin-top: 1rem;
 }
@@ -133,7 +133,7 @@
 }
 
 /* ================================
-   🌐 Style global
+   🌐 Global styles
    ================================ */
 body {
   margin: 0;
@@ -285,7 +285,7 @@ body {
 
 
 /* ================================
-   📧 Formulaire contact
+   📧 Contact form
    ================================ */
 .contact form {
   display: flex;
@@ -318,7 +318,7 @@ body {
 }
 
 /* ================================
-   💡 Section compétences (Skills)
+   💡 Skills section
    ================================ */
 .skills-section {
   padding: 3rem 2rem;
@@ -370,7 +370,7 @@ body {
 }
 
 /* ================================
-   👤 Section À propos
+   👤 About section
    ================================ */
 .about-section {
   padding: 4rem 2rem;
@@ -431,7 +431,7 @@ body {
   color: #93c5fd;
 }
 
-/* ✅ Responsive : liens en colonne sur mobile */
+/* ✅ Responsive: links stack vertically on mobile */
 @media (max-width: 600px) {
   .footer-links {
     flex-direction: column;
@@ -445,7 +445,7 @@ body {
 
 @media (max-width: 768px) {
   .navbar {
-    flex-direction: column; /* empile les éléments */
+    flex-direction: column; /* stacks the elements */
     align-items: flex-start;
   }
 

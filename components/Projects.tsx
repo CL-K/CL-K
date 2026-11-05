@@ -1,44 +1,47 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Cryptodash – Projet DevOps complet",
-      description: "Pipeline DevOps complet : Infrastructure as Code (Terraform/Kubernetes), application containerisée, et déploiement GitOps automatisé avec ArgoCD.",
+      title: "Cryptodash – Complete DevOps Project",
+      description:
+        "End-to-end DevOps pipeline: Infrastructure as Code (Terraform/Kubernetes), containerized application, and automated GitOps deployment with ArgoCD.",
       github: "https://github.com/CL-KRMA/cryptodash-infra",
       demo: null,
       extraLinks: [
-        { label: "Repo Infra", url: "https://github.com/CL-KRMA/cryptodash-infra" },
-        { label: "Repo App", url: "https://github.com/CL-KRMA/cryptodash-app" },
-        { label: "Repo GitOps", url: "https://github.com/CL-KRMA/cryptodash-gitops" }
-      ]
+        { label: "Infra Repo", url: "https://github.com/CL-KRMA/cryptodash-infra" },
+        { label: "App Repo", url: "https://github.com/CL-KRMA/cryptodash-app" },
+        { label: "GitOps Repo", url: "https://github.com/CL-KRMA/cryptodash-gitops" },
+      ],
     },
     {
-      title: "AI‑Chat‑app – Application IA multi‑modèles",
-      description: "Application Next.js intégrant plusieurs modèles IA (Gemma, LLaMA, LLaVA) avec API REST et interface utilisateur.",
+      title: "AI‑Chat‑app – Multi-model AI Application",
+      description:
+        "Next.js application integrating multiple AI models (Gemma, LLaMA, LLaVA) with REST API and user interface.",
       github: "https://github.com/CL-KRMA/AI-Chat-app",
       demo: null,
       extraLinks: [
-        { label: "Repo Infra", url: "https://github.com/CL-KRMA/AI-Chat-infra" },
-        { label: "Repo App", url: "https://github.com/CL-KRMA/AI-Chat-app" },
-        { label: "Repo GitOps", url: "https://github.com/CL-KRMA/AI-Chat-gitops" }
-      ]
+        { label: "Infra Repo", url: "https://github.com/CL-KRMA/AI-Chat-infra" },
+        { label: "App Repo", url: "https://github.com/CL-KRMA/AI-Chat-app" },
+        { label: "GitOps Repo", url: "https://github.com/CL-KRMA/AI-Chat-gitops" },
+      ],
     },
     {
-      title: "Application React/Node.js, Next.js",
-      description: "API REST + interface utilisateur moderne.",
+      title: "React/Node.js, Next.js Application",
+      description: "REST API + modern user interface.",
       github: "https://github.com/CL-KRMA/Galerie-en-ligne-fullstack",
-      demo: "https://galerie-en-ligne-fullstack.vercel.app/"
+      demo: "https://galerie-en-ligne-fullstack.vercel.app/",
     },
     {
-      title: "Taskflow – Gestion simplifiée des tâches Next.js",
-      description: "Taskflow : API REST robuste avec interface utilisateur moderne et intuitive.",
+      title: "Taskflow – Simplified Task Management with Next.js",
+      description:
+        "Taskflow: robust REST API with a modern and intuitive user interface.",
       github: "https://github.com/CL-KRMA/Taskflow",
-      demo: "https://taskflow-omega-teal.vercel.app/"
-    }
+      demo: "https://taskflow-omega-teal.vercel.app/",
+    },
   ];
 
   return (
     <div className="projects">
-      <h2 className="projects-title">🚀 Mes projets</h2>
+      <h2 className="projects-title">🚀 My projects</h2>
       <div className="project-list">
         {projects.map((project, index) => (
           <div key={index} className="project-card">
@@ -47,19 +50,20 @@ export default function Projects() {
             <div className="project-links">
               {project.github && (
                 <a href={project.github} target="_blank" rel="noopener noreferrer">
-                  🔗 Voir le code
+                  🔗 View code
                 </a>
               )}
               {project.demo && (
                 <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                  🌐 Voir la démo
+                  🌐 View demo
                 </a>
               )}
-              {project.extraLinks && project.extraLinks.map((link, i) => (
-                <a key={i} href={link.url} target="_blank" rel="noopener noreferrer">
-                  📂 {link.label}
-                </a>
-              ))}
+              {project.extraLinks &&
+                project.extraLinks.map((link, i) => (
+                  <a key={i} href={link.url} target="_blank" rel="noopener noreferrer">
+                    📂 {link.label}
+                  </a>
+                ))}
             </div>
           </div>
         ))}

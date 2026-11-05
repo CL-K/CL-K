@@ -1,7 +1,7 @@
 import Image from "next/image";
 import "./contact.css";
 
-// Import des logos (tu peux les placer dans /assets ou utiliser les RefIds téléchargés)
+// Import the logos (you can place them in /assets or use the downloaded RefIds)
 import whatsappLogo from "../app/assets/logos/whatsapp.png";
 import telegramLogo from "../app/assets/logos/telegram.png";
 import githubLogo from "../app/assets/logos/github.png";
@@ -9,9 +9,9 @@ import githubLogo from "../app/assets/logos/github.png";
 export default function Contact() {
   return (
     <section className="contact-section">
-      <h2 className="contact-title">📩 Me contacter</h2>
+      <h2 className="contact-title">📩 Contact me</h2>
       <p className="contact-subtitle">
-        Vous avez un projet ou une idée? Choisissez le moyen de contact qui vous convient.
+        Do you have a project or an idea? Choose the contact method that suits you.
       </p>
 
       <div className="contact-options">
