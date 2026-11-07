@@ -23,7 +23,7 @@ export default function Contact() {
           <Image src={telegramLogo} alt="Telegram" className="contact-icon" />
           Telegram
         </a>
-        <a href="https://github.com/CL-KRMA" target="_blank" rel="noopener noreferrer" className="contact-link">
+        <a href="https://github.com/cl-k" target="_blank" rel="noopener noreferrer" className="contact-link">
           <Image src={githubLogo} alt="GitHub" className="contact-icon" />
           GitHub
         </a>

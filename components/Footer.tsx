@@ -3,7 +3,7 @@ function Footer() {
     <footer className="footer">
       <p>© 2026 CL. All rights reserved.</p>
       <div className="socials">
-        <a href="https://github.com/CL-KRMA" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://github.com/cl-k" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/cheick-laye-kourouma-2b1b423b8/?locale=fr-FR" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:cldivers44@gmail.com">Email</a>
       </div>
