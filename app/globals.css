@@ -399,6 +399,10 @@ body {
   border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 1.2rem;
   padding: 1.6rem;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   box-shadow: 0 20px 45px rgba(2, 6, 23, 0.25);
   transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }

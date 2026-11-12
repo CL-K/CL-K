@@ -1,6 +1,16 @@
 export default function Projects() {
   const projects = [
     {
+      title: "HA-Infra — Highly Available Kubernetes Cluster on AWS",
+      description:
+        "Provisioned a K3s HA cluster on AWS across 3 AZs using Terraform and Ansible. The setup includes VPC segmentation, private/public subnets, NAT gateways, etcd quorum resilience, ArgoCD, Traefik ingress, cert-manager with Let's Encrypt, Grafana monitoring, and hardened SSH/Kubernetes access restricted to the operator IP.",
+      github: "https://github.com/CL-KRMA/HA-infra",
+      demo: null,
+      extraLinks: [
+        { label: "GitHub Repo", url: "https://github.com/CL-KRMA/HA-infra" },
+      ],
+    },
+    {
       title: "HA-Infra EKS — Multi-AZ Amazon EKS Cluster on AWS",
       description:
         "Provisioned a production-grade Amazon EKS cluster with Terraform across 3 availability zones. Includes VPC segmentation, private node groups, secure remote state on S3 + KMS, EBS CSI integration, Traefik ingress, cert-manager, ArgoCD, Prometheus, and Grafana. CI pipeline validates Terraform, TFLint, Checkov, Ansible, and ShellCheck on every push.",
